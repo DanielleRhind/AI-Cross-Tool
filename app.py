@@ -10,7 +10,7 @@ from pathlib import Path
 import cross_algo
 from selenium_helper import selenium
 from pdf_helper import pdf_to_text
-from llama_chat import chat  # your own wrapper
+from cross_algo import chat  # your own wrapper
 import json
 import os
 import pathlib
