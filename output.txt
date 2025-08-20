@@ -1,0 +1,200 @@
+TPS62850x 2.7V to 6V, 1A / 2A / 3A, Step-Down Converter in SOT583 Package
+1 Features
+•
+Functional Safety-Capable
+–
+Documentation available to aid functional safety 
+system design
+•
+Input voltage range: 2.7V to 6V
+•
+Output voltage from 0.6V to 5.5V
+•
+1% feedback voltage accuracy
+(full temperature range)
+•
+TJ = –40°C to +150°C
+•
+Family of 1A, 2A (continuous), and 3A (peak) 
+devices
+•
+Adjustable switching frequency and sync of
+1.8MHz to 4MHz
+•
+Forced PWM or PWM and PFM operation
+•
+Quiescent current 17µA (typical)
+•
+Precise ENABLE input allows:
+–
+User-defined undervoltage lockout
+–
+Exact sequencing
+•
+100% duty cycle mode
+•
+Active output discharge
+•
+Power-good output with window comparator
+•
+For device options with adjustable soft start, see 
+the TPS628511
+2 Applications
+•
+Motor drives
+•
+Factory automation and control
+•
+Building automation
+•
+Test and measurement
+•
+General purpose POL
+3 Description
+The TPS62850x is a family of pin-to-pin 1A, 2A 
+(continuous), and 3A (peak) high efficiency, easy-
+to-use synchronous step-down DC/DC converters. 
+The devices are based on a peak current mode 
+control topology. Low resistive switches allow up to 
+2A continuous output current and 3A peak current. 
+The switching frequency is externally adjustable from 
+1.8MHz to 4MHz and can also be synchronized to 
+an external clock in the same frequency range. In 
+PWM and PFM mode, the TPS62850x automatically 
+enters power save mode at light loads to maintain 
+high efficiency across the whole load range. The 
+TPS62850x provides a 1% output voltage accuracy 
+in PWM mode, which helps design a power supply 
+with high output voltage accuracy, fulfilling tight supply 
+voltage requirements of digital processors and FPGA.
+The TPS62850x is available in an 8-pin 1.60mm × 
+2.10mm SOT583 package.
+Package Information
+PART NUMBER
+PACKAGE(1)
+PACKAGE SIZE(2)
+TPS62850x
+DRL (SOT583, 8)
+1.60mm × 2.10mm
+(1)
+For more information, see Section 12.
+(2)
+The package size (length × width) is a nominal value and 
+includes pins, where applicable.
+Device Information
+PART NUMBER(1)
+OUTPUT CURRENT
+OUTPUT VOLTAGE
+TPS628501DRLR
+1A
+Adjustable
+Fixed 1.8V
+TPS628502DRLR
+2A
+Adjustable
+TPS6285020ADRLR
+Fixed 1.2V
+TPS6285020MDRLR
+Fixed 1.8V
+TPS628503DRLR
+3A
+Adjustable
+(1)
+See the Device Comparison Table.
+L
+0.47PH
+MODE/SYNC
+SW
+FB
+VIN
+V
+2.7 V - 6 V
+IN
+TPS62850x
+EN
+R 1
+VOUT
+R 2
+GND
+PG
+COMP/FSET
+R CF
+R 3
+CFF
+2*10 PF
+0603
+0603
+CIN
+2*10 PF
+COUT
+Simplified Schematic
+Output Current (A)
+Efficiency (%)
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+100P
+1m
+10m
+100m
+1
+3
+VIN = 4.0 V
+VIN = 5.0 V
+VIN = 6.0 V
+Efficiency versus IOUT, VOUT = 3.3V
+TPS628501, TPS628502, TPS628503
+SLUSEC8C – MARCH 2021 – REVISED JUNE 2025
+An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications, 
+intellectual property matters and other important disclaimers. PRODUCTION DATA.
+Table of Contents
+1 Features............................................................................1
+2 Applications.....................................................................1
+3 Description.......................................................................1
+4 Device Comparison Table...............................................3
+5 Pin Configuration and Functions...................................3
+6 Specifications.................................................................. 4
+6.1 Absolute Maximum Ratings........................................ 4
+6.2 ESD Ratings............................................................... 4
+6.3 Recommended Operating Conditions.........................4
+6.4 Thermal Information....................................................5
+6.5 Electrical Characteristics.............................................5
+6.6 Typical Characteristics................................................8
+7 Parameter Measurement Information............................9
+7.1 Schematic................................................................... 9
+8 Detailed Description......................................................10
+8.1 Overview...................................................................10
+8.2 Functional Block Diagram.........................................10
+8.3 Feature Description...................................................10
+8.4 Device Functional Modes..........................................13
+9 Application and Implementation..................................15
+9.1 Application Information............................................. 15
+9.2 Typical Application.................................................... 17
+9.3 System Examples..................................................... 27
+9.4 Power Supply Recommendations.............................28
+9.5 Layout....................................................................... 28
+10 Device and Documentation Support..........................30
+10.1 Device Support....................................................... 30
+10.2 Receiving Notification of Documentation Updates..30
+10.3 Support Resources................................................. 30
+10.4 Trademarks.............................................................30
+10.5 Electrostatic Discharge Caution..............................30
+10.6 Glossary..................................................................30
+11 Revision History.......................................................... 30
+12 Mechanical, Packaging, and Orderable 
+Information.................................................................... 31
+TPS628501, TPS628502, TPS628503
+SLUSEC8C – MARCH 2021 – REVISED JUNE 2025
+www.ti.com
+2
+Submit Document Feedback
+Copyright © 2025 Texas Instruments Incorporated
+Product Folder Links: TPS628501 TPS628502 TPS628503
