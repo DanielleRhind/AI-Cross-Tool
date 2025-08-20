@@ -176,7 +176,7 @@ def format_dimensions(s):
     return "x".join(cleaned_numbers)
  
  
-def algorithm(response:str ,
+def algorithm_main(response:str ,
               boolean_package : str,
               tol :float = 1.2,
               top_n :int = 10,
@@ -357,3 +357,4 @@ def main():
 if __name__ == "__main__":
    
     main()
+
