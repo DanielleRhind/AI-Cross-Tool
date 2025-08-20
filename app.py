@@ -19,6 +19,9 @@ import fitz          # PyMuPDF
 import subprocess
 import sys
 
+os.system('playwright install')
+os.system('playwright install-deps')
+
 @st.cache_data(show_spinner=False)
 def get_pdf_bytes(path: Path) -> bytes:
     """Return the raw PDF bytes – cached and pickle‑safe."""
