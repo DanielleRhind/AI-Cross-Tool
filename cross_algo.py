@@ -184,7 +184,21 @@ def algorithm_main(response:str ,
               ):
    
     import re, json
- 
+       # 1️⃣  Make sure we actually have a string
+    # ----------------------------------------------------
+    if response is None:
+        raise ValueError("No LLM response – the previous step returned None")
+
+    # If the LLM returned a dict, pull out the text field
+    if isinstance(response, dict):
+        # Common Ollama response shape
+        response = response.get("response")
+        if response is None:
+            raise ValueError("LLM returned a dict without a 'response' key")
+
+    # Ensure we now have a plain string
+    if not isinstance(response, str):
+        raise TypeError(f"Expected string after LLM, got {type(response)!r}")
     # 1) Grab the first [...] block
     m = re.search(r'\[.*\]', response, flags=re.DOTALL)
     if not m:
@@ -357,4 +371,5 @@ def main():
 if __name__ == "__main__":
    
     main()
+
 
