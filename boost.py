@@ -6,7 +6,7 @@ import ast , re
 import json
 from playwright.sync_api import sync_playwright
 import os
-from .chat_with_ollama import chat
+from chat_with_ollama import chat
 
 def frequency_overlap_ratio(min1, max1, min2, max2):
     """
@@ -308,4 +308,5 @@ def algorithm_boost(response:str ,
             .head(top_n)
 
     )
+
 
