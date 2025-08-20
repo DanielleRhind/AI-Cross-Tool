@@ -9,8 +9,8 @@ import ast , re
 import json
 from playwright.sync_api import sync_playwright
 import os
-from .chat_with_ollama import chat
-from .boost import algorithm_boost , algorithm_buck , algorithm_buck_boost
+from chat_with_ollama import chat
+from boost import algorithm_boost , algorithm_buck , algorithm_buck_boost
 # from boost import boost
 
 
@@ -127,4 +127,5 @@ def algorithm_main(response:str ,
             result = algorithm_buck_boost(response,boolean_package,tol,top_n,min_freq_overlap_ratio)
     print(type(result))
     return result
+
 
