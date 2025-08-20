@@ -19,18 +19,6 @@ import fitz          # PyMuPDF
 import subprocess
 import sys
 
-def install_playwright():
-    """Download Playwright browser binaries in the current environment."""
-    # `sys.executable` points to the Python interpreter that is running this script.
-    # The `-m` flag tells Python to run the `playwright` module as a script.
-    # `install` is the sub‑command that fetches Chromium/Firefox/WebKit.
-    subprocess.run(
-        [sys.executable, "-m", "playwright", "install"],
-        check=True,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
-        text=True
-    )
 @st.cache_data(show_spinner=False)
 def get_pdf_bytes(path: Path) -> bytes:
     """Return the raw PDF bytes – cached and pickle‑safe."""
@@ -192,7 +180,3 @@ if st.checkbox("Show extracted text", value=False):
     except FileNotFoundError:
         st.warning("output.txt has not been created yet.")
 
-if __name__ == "__main__":
-    print("Running 'playwright install'…")
-    install_playwright()
-    print("Playwright browsers are ready.")
