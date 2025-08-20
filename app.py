@@ -7,10 +7,10 @@ if platform.system() == "Windows":
     asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
 import streamlit as st
 from pathlib import Path
-from backend import cross_algo
-from backend.selenium_helper import selenium
-from backend.pdf_helper import pdf_to_text
-from backend.chat_with_ollama import chat  # your own wrapper
+import cross_algo
+from selenium_helper import selenium
+from pdf_helper import pdf_to_text
+from chat_with_ollama import chat  # your own wrapper
 import json
 import os
 import pathlib
