@@ -1,3 +1,4 @@
+import os 
 def chat(prompt: str, *, model: str = "llama3") -> str:
     """
     Ask the local Ollama model *model* the *prompt* and return its text answer.
